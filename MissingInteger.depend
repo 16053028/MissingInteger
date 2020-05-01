@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1588086316 source:d:\c++\learn c++\hellocpp\main.cpp
+	<iostream>
+	<algorithm>
+
+1588086714 source:d:\c++\learn c++\missinginteger\main.cpp
+	<iostream>
+	<algorithm>
+
