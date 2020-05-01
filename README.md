@@ -43,7 +43,7 @@ function solution(int[] &A){
 		g_numb = 1; // g_numb =1.
 	} else if (A[0] == 0 || A[0] == 1){ // jika value A[0] adalah 0 atau 1.
 		for(i to A){ // Loop untuk mencari angka yang hilang.
-			g_numb = A[i]+1;
+			g_numb = A[i]+1; // value A[i] + 1 adalah value g_numb.
 			if(A[i+1] != g_numb){ // jika value A[i+1] tidak sama dengan g_numb. 
 				break; // keluar dari loop.
 			}
