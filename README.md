@@ -30,6 +30,7 @@ dari sini bisa diambil kesimpulan bahwa  :
 
 
 Pseudo-Code
+```
 Declaration :
 g_numb : integer;
 
@@ -53,6 +54,7 @@ function solution(int[] &A){
 	}
 	return g_numb; // mengembalikan hasilnya.
 }
+```
 
 saya kira Time Complexitynya adalah yang saya tahu hanya untuk loopnya yaitu O(n^) untuk totalnya sendiri saya tidak tahu dan Space Complexitynya adalah O(0) karena tidak memakai space tambahan. Koreksi saya jika salah.
 
