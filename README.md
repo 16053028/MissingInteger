@@ -39,24 +39,24 @@ function solution(int[] &A){
 	sort(A.begin(), A.end()); //Sorting The Array
     A.erase( remove_if(A.begin(), A.end(), [](int i){return i < 0;}) , A.end() ); // Remove Negative Value
     A.erase( unique(A.begin(), A.end()) , A.end() ); // Remove duplicate Value
-	if(A[i] > 1){
-		g_numb = 1;
-	} else if (A[0] == 0 || A[0] == 1){
-		for(i to A){
+	if(A[0] > 1){ // Jika value lebih besar dari 1;
+		g_numb = 1; // g_numb =1.
+	} else if (A[0] == 0 || A[0] == 1){ // jika value A[0] adalah 0 atau 1.
+		for(i to A){ // Loop untuk mencari angka yang hilang.
 			g_numb = A[i]+1;
-			if(A[i+1] != g_numb){
-				break;
+			if(A[i+1] != g_numb){ // jika value A[i+1] tidak sama dengan g_numb. 
+				break; // keluar dari loop.
 			}
 		}
-	}else{
-		g_numb = 1;
+	}else{ //Jika value A negatif atau kosong.
+		g_numb = 1; // g_numb = 1.
 	}
-	return g_numb;
+	return g_numb; // mengembalikan hasilnya.
 }
 
 saya kira Time Complexitynya adalah yang saya tahu hanya untuk loopnya yaitu O(n^) untuk totalnya sendiri saya tidak tahu dan Space Complexitynya adalah O(0) karena tidak memakai space tambahan. Koreksi saya jika salah.
 
-Ada banyak solusi. Tapi saya menggunakan solusi ini. karena menurut saya ini cukup bagus.
+Ada banyak solusi. Tapi saya menggunakan solusi ini. karena menurut saya ini cukup bagus dan bekerja sesuai keinginan.
 
 anda punya solusi lain yang lebih baik dan efisien? Submit it and let me know about your solution. hehehehe
 
